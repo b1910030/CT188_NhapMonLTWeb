@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+main {
+    background-color: #fff;
+}
+
+#top-header {
+    height: 26px;
+    background-color: #132539;
+    width: 100%;
+}
+
+#top-header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top-header .container a {
+    color: #fff;
+    font: 700;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-decoration-line: none;
+    
+}
+
+#top-header p {
+    float: left;
+    color: #fff;
+    font: 700;
+    margin-right: 10px;
+    margin-top: 5px; 
+    font-weight: bolder;
+}
+
+#header {
+    height: 60px;
+    background-color: #FD5A32;
+    width: 100%;
+}
+
+#header .container{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /*chia cot */
+}
+
+#header .container img{
+    /* max-width: 100%; */
+    max-height: 60px;
+    margin: 0 auto;
+    /* object-fit: cover; */
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .submenu {
+    list-style: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase  ;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#nav .nav-down{
+    font-size: 15px;
+}
+
+#nav li:hover .submenu{
+    display: block;
+} 
+
+#nav > li:hover > a,
+#nav .submenu li:hover a {
+    color: #000000;
+    background-color: #ccc;
+}
+
+#nav .submenu {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0.3);
+}
+
+#nav .submenu a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#header .container .search-btn{
+    
+    padding: 0 70px;
+    
+}
+
+#header .container .search-icon{
+    color:#fff;
+    font-size: 25px;
+    line-height: 60px;
+    cursor: pointer;
+    
+
+}
+
+
+#slider {
+    /* height: 500px; */
+    background-color: #132539;
+}
+
+
+#slider img {
+    display: block;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.cl0{
+    font-size: 12px;
+    font-style: normal;
+    width: fit-content;
+    display: flex;
+    border: 1px solid #efefef;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 4px 2px;
+    margin: 15px 50px;
+
+}
+.cl1{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.cl1::after{
+    content: "\00BB";
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.cl2{
+    color: #f16728;
+}
+
+li{
+    list-style: none;
+}
+
+[class *= "col-"]{
+    float: left;
+    padding: 10px;
+}
+/*mobile*/
+@media only screen and (max-width: 599px) {
+[class *= "col-"]{
+    width: 100%;
+}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/*Computer*/
+@media only screen and (min-width: 800px){
+    .col-c-1 {width: 8.33%;}
+    .col-c-2 {width: 16.66%;}
+    .col-c-3 {width: 25%;}
+    .col-c-4 {width: 33.33%;}
+    .col-c-5 {width: 41.66%;}
+    .col-c-6 {width: 50%;}
+    .col-c-7 {width: 58.33%;}
+    .col-c-8 {width: 66.66%;}
+    .col-c-9 {width: 75%;}
+    .col-c-10 {width: 83.33%;}
+    .col-c-11 {width: 91.66%;}
+    .col-c-12 {width: 100%;}
+}
+
+
+/* ---------- header -------------------*/
+
+
+
+#content {
+    height: 0;
+    background-color: #fff;
+    color: #fff;
+}
+
+.content-section{
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.grid{
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33%;
+}
+
+.list{
+    list-style: none;
+    line-height: 25px;
+    padding: 2px 0  ;
+}
+
+
+/* #content .form .left{
+    float: right;
+} */
+
+footer {
+    background-color: #132539;  
+}
+
+footer .gioi-thieu {
+    height: 220px;
+    background-color: #FD5A32;
+    color: #fff;
+}
+
+
+footer img{
+    width: 60%;
+}
+
+footer .dia-chi ul{
+    list-style: none;
+    line-height: 40px;
+}
+
+footer .dia-chi{
+    color: #fff;
+    height: 370px;
+    background-color: #132539;
+    width: 100%;
+    
+}
+
+
+/* -------------------------san pham------------------ */
+#sanpham{
+    background-color: lightgray;
+}
+
+#leftSide{
+	position: relative;
+	margin: 10px 50px;
+	width: 200px;
+	float: left;
+	min-height: 250px; 
+	
+}
+
+.leftMenu ul{
+	list-style: none;	
+	margin: 0px;
+	padding: 10px;	 
+}
+.leftMenu ul li{
+	text-shadow: 0 1px 0 #fff;
+	font-weight:bold;
+	line-height: 35px;
+	padding-left: 4px;
+	cursor: pointer;
+	 
+}
+.leftMenu ul li:hover{	 
+	 background-color:#ddd;	 
+}
+
+.leftMenu a{	 
+	text-decoration: none;	
+}
+
+.leftMenu a:visited{	 
+    color: #132539;
+}
+
+.group-box {
+ 	 
+    border: 1px solid #999;
+    background:#fff;
+    border-radius:4px;
+    box-shadow:3px 3px 10px #ddd;
+    margin-bottom:  10px;
+    padding-bottom: 10px; 
+	
+}
+
+.group-box .title {
+    background-color:   #132539;
+	height: 28px;
+    padding: 5px 10px;
+    margin-top: 0;
+    color:#fff;
+    font-size:13pt;
+    font-weight:bold;
+}
+
+#gd{
+    color: #FD5A32;
+}
+
+#kq{
+    padding: 15px;
+    margin: 10px;
+    background-color: #ccc;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+
+.product-cat{
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.product-name{
+    color: #132539;
+}
+ 
+
+ ul.products li img{
+    width: 100%;;
+}
+
+
+.pagination a{
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #132539;
+}
+
+.pagination a.active{
+    background-color: dodgerblue;
+    color: white;
+} 
+
+.pagination a:hover:not(.active){
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+

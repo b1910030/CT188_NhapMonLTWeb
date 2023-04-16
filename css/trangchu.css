@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#main {
+    width: 200px;
+}
+
+#top-header {
+    height: 26px;
+    background-color: #132539;
+    width: 100%;
+}
+
+#top-header .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#top-header .container a {
+    color: #fff;
+    font: 700;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-decoration-line: none;
+    
+}
+
+#top-header p {
+    float: left;
+    color: #fff;
+    font: 700;
+    margin-right: 10px;
+    margin-top: 5px; 
+    font-weight: bolder;
+}
+
+#header {
+    height: 60px;
+    background-color: #FD5A32;
+    width: 100%;
+}
+
+#header .container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ; /*chia cot */
+}
+
+#header .container img{
+    /* max-width: 100%; */
+    max-height: 60px;
+    margin: 0 auto;
+    /* object-fit: cover; */
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .submenu {
+    list-style: none;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase  ;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 24px;
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#nav li input{
+    display: block;
+}
+
+#nav .nav-down{
+    font-size: 15px;
+}
+
+#nav li:hover .submenu{
+    display: block;
+} 
+
+#nav > li:hover > a,
+#nav .submenu li:hover a {
+    color: #000000;
+    background-color: #ccc;
+}
+
+#nav .submenu {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0, 0, 0.3);
+}
+
+#nav .submenu a{
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+#header .container .search-btn{
+    
+    padding: 0 70px;
+    
+}
+
+#header .container .search-icon{
+    color:#fff;
+    font-size: 25px;
+    line-height: 60px;
+    cursor: pointer;
+    
+
+}
+
+
+#slider {
+    /* height: 500px; */
+    background-color: #132539;
+}
+
+
+#slider img {
+    display: block;
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+
+#content {
+    height: 0;
+    background-color: #fff;
+    color: #fff;
+}
+
+.content-section{
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+
+}
+
+
+
+.grid{
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* .grid-2-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33%;
+} */
+
+.list{
+    list-style: none;
+    line-height: 25px;
+    padding: 2px 0  ;
+}
+
+
+/* #content .form .left{
+    float: right;
+} */
+
+footer {
+    height: 570px;
+    /* background-color: #132539; */
+    width: 100%;
+}
+
+footer .gioi-thieu {
+    height: auto;
+    background-color: #FD5A32;
+    color: #fff;
+}
+
+
+footer img{
+    width: 60%;
+}
+
+footer .dia-chi ul{
+    list-style: none;
+    line-height: 40px;
+}
+
+footer .dia-chi{
+    color: #fff;
+    height: 370px;
+    background-color: #132539;
+    width: 100%;
+    
+}
+
+[class *= "col-"]{
+    float: left;
+    padding: 10px;
+}
+/*mobile*/
+@media only screen and (max-width: 599px) {
+[class *= "col-"]{
+    width: 100%;
+}
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/*Computer*/
+@media only screen and (min-width: 800px){
+    .col-c-1 {width: 8.33%;}
+    .col-c-2 {width: 16.66%;}
+    .col-c-3 {width: 25%;}
+    .col-c-4 {width: 33.33%;}
+    .col-c-5 {width: 41.66%;}
+    .col-c-6 {width: 50%;}
+    .col-c-7 {width: 58.33%;}
+    .col-c-8 {width: 66.66%;}
+    .col-c-9 {width: 75%;}
+    .col-c-10 {width: 83.33%;}
+    .col-c-11 {width: 91.66%;}
+    .col-c-12 {width: 100%;}
+}
+
+
+
+
+
+
+
+
+
